@@ -1,3 +1,5 @@
+22/12/19 - Testing our api from Lorem Picsum and routing
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
