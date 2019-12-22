@@ -1,0 +1,62 @@
+.all {
+  
+  margin: 20px;
+  margin-top: 40px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  height: 90vh;
+  
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  
+}
+
+.pictureContainer {
+  display: flex;
+  /* justify-content: center; */
+  
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+/* .allPictures {
+  width: 20%;
+} */
+
+.allPictures2 {
+  height: 300px;
+  min-width: 250px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 2%;
+  
+  margin: 10px;
+  
+}
+
+.bicPictureContainer {
+  display: flex;
+  margin-left: 100px;
+}
+
+/* .bigPicture {
+ width: 55%;
+} */
+
+.bigPicture2{
+  height: 620px;
+  min-width: 800px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 1%;
+  margin: 10px;
+}
+
