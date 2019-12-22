@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./picture.module.css";
-
+import Navbar from './Navbar';
 
 
 class Picture extends React.Component {
@@ -57,39 +57,49 @@ class Picture extends React.Component {
   render () {
     console.log(this.picture())
     return (
+      <div>
+      <Navbar />
       <div className={styles.all}>
-      <div><h1>Totally Random Pictures</h1></div>
-      <div className={styles.container}>
-      <div className={styles.pictureContainer}>
       
-        <div className={styles.allPictures}>
-          <div className={styles.allPictures2}>
-            
-            <h2>Random Picture 1</h2>
-            <img src={this.picOne()} alt="" />
-            <br/>
-            <button onClick={this.diceRoll1}>Random Picture</button>
-          </div>  
-        </div>
-        <div className={styles.allPictures}>
-          <div className={styles.allPictures2}>    
-            <h2>Random Picture 2</h2>
-            <img src={this.picTwo()} alt=""/>
-            <br/>
-            <button onClick={this.diceRoll2}>Random Picture 2</button>
+          <div className={styles.h1Pic}><h1>Totally Random Pictures</h1></div>
+          <div className={styles.container}>
+          <div className={styles.pictureContainer}>
+      
+            <div className={styles.allPictures}>
+              <div className={styles.allPictures2}>
+                <h2 className={styles.h2Pic}>Random Picture 1</h2>
+                <div className={styles.pic}>
+                <img src={this.picOne()} alt="" />
+                <br/>
+                <button onClick={this.diceRoll1}>Randomise</button>
+                </div>
+            </div>  
+              </div>
+        
+            <div className={styles.allPictures}>
+              <div className={styles.allPictures2}>    
+                <h2 className={styles.h2Pic}>Random Picture 2</h2>
+                <div className={styles.pic}>
+                <img src={this.picTwo()} alt=""/>
+                <br/>
+                <button onClick={this.diceRoll2}>Randomise</button>
+                </div>
+              </div>
+            </div>
           </div>
+
+            <div className={styles.bicPictureContainer}>
+              <div className={styles.bigPicture}>
+                <div className={styles.bigPicture2}>
+                  <h2 className={styles.h2Pic}>Random picture again</h2>
+                  <div className={styles.pic}>
+                  <img src={this.picture()} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
-      <div className={styles.bicPictureContainer}>
-        <div className={styles.bigPicture}>
-          <div className={styles.bigPicture2}>
-            <h2>Random picture again</h2>
-            <img src={this.picture()} alt="" />
-
-          </div>
-          </div>
-          </div>
-        </div>
       </div>
     )
   }

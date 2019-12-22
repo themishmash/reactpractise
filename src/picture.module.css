@@ -1,10 +1,13 @@
 .all {
-  
-  margin: 20px;
-  margin-top: 40px;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 30px;
   box-sizing: border-box;
   border: 1px solid black;
-  height: 90vh;
+  height: calc(100vh - 60px);
+  padding: 0;
   
 }
 
@@ -60,3 +63,10 @@
   margin: 10px;
 }
 
+.h1Pic, .h2Pic, button {
+  text-align: center;
+}
+
+.pic {
+  text-align: center;
+}
