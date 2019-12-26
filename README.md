@@ -1,8 +1,7 @@
 This is to practise routing and api call with lorem picsum, pokemon api etc
 
 
-
-#################################################################################################
+---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
